@@ -1,4 +1,3 @@
-// src/components/Header.tsx
 import { Button } from "@/components/ui/button";
 import SearchInput from "@/components/SearchInput";
 

@@ -9,13 +9,13 @@ export default function OverviewPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8 space-y-8">
-      <div>
+      <header>
         <h1 className="text-3xl font-bold tracking-tight text-gray-900">
           Overview
         </h1>
-      </div>
+      </header>
 
-      <div className="flex flex-col lg:flex-row gap-8">
+      <main className="flex flex-col lg:flex-row gap-8">
         <div className="lg:w-1/3 w-full">
           {latest && (
             <ReportsOverview
@@ -29,7 +29,7 @@ export default function OverviewPage() {
         <div className="lg:w-2/3 w-full">
           <LineChartCard data={data} />
         </div>
-      </div>
+      </main>
     </div>
   );
 }
